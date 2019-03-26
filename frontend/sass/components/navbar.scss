@@ -1,0 +1,38 @@
+$black-color: #2D2D2D;
+$shadow-nav-bar :0px 6px 10px rgba(0, 0, 0, 0.1);
+
+.navbar{
+  background:$black-color;
+  box-shadow: $shadow-nav-bar;
+  .navbar-content{
+    display:flex;
+    padding:20px;
+
+    width:1200px;
+    margin:0 auto;
+  }
+  .navbar-logo{
+    width:50%;
+    align-self:center;
+    a{
+      color:#fff;
+      text-decoration:none;
+      font-size:32px;
+      font-weight:bold;
+    }
+  }
+  .navbar-links{
+    display:flex;
+    width:50%;
+    margin:0px;
+    li{
+      margin: 0 60px;
+    }
+    a{
+      color:#fff;
+      text-decoration:none;
+      font-size:32px;
+    }
+  }
+}
+
