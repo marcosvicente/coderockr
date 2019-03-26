@@ -27,6 +27,7 @@ body {
   display: flex;
   width: 50%;
   margin: 0px;
+  list-style-type: none;
 }
 .navbar .navbar-links li {
   margin: 0 60px;
