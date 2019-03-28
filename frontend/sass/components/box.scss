@@ -1,0 +1,41 @@
+$orange-color: #F1A10A;
+$text-color: #2D2D2D;
+.box-double-content {
+  display:inline-flex;
+  margin: 50px 0;
+}
+.box-double{
+  width:50%;
+  .box-double-content{
+    display:flex;
+    .box-double-image{
+      height:320px;
+      width:320px;
+    }
+    .box-double-text{
+      padding:35px 80px;
+      background:#fff;
+      .author{
+        font-size:24px;
+        color:$text-color;
+      }
+      h2{
+        color: $orange-color;
+        font-size:36px;
+        margin:0;
+      }
+      p{
+        margin:0;
+        font-size:24px;
+        color:$text-color;
+      }
+    }
+    .box-double-button{
+      // position: absolute;
+      margin-right: -32px;
+      float:right;
+      text-decoration:none;
+      display:block;
+    }
+  }
+}

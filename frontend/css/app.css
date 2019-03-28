@@ -1,6 +1,12 @@
 body {
   font-family: 'Rubik', sans-serif;
   margin: 0;
+  box-sizing: content-box;
+}
+
+main {
+  background: linear-gradient(90deg, #F1A10A 0%, #342303 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .navbar {
@@ -36,6 +42,46 @@ body {
   color: #fff;
   text-decoration: none;
   font-size: 32px;
+}
+
+.box-double-content {
+  display: inline-flex;
+  margin: 50px 0;
+}
+
+.box-double {
+  width: 50%;
+}
+.box-double .box-double-content {
+  display: flex;
+}
+.box-double .box-double-content .box-double-image {
+  height: 320px;
+  width: 320px;
+}
+.box-double .box-double-content .box-double-text {
+  padding: 35px 80px;
+  background: #fff;
+}
+.box-double .box-double-content .box-double-text .author {
+  font-size: 24px;
+  color: #2D2D2D;
+}
+.box-double .box-double-content .box-double-text h2 {
+  color: #F1A10A;
+  font-size: 36px;
+  margin: 0;
+}
+.box-double .box-double-content .box-double-text p {
+  margin: 0;
+  font-size: 24px;
+  color: #2D2D2D;
+}
+.box-double .box-double-content .box-double-button {
+  margin-right: -32px;
+  float: right;
+  text-decoration: none;
+  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */
