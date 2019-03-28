@@ -1,41 +1,90 @@
 $orange-color: #F1A10A;
 $text-color: #2D2D2D;
-.box-double-content {
+
+.box-double-container{
   display:inline-flex;
   margin: 50px 0;
+  .box-double{
+    width:50%;
+    .box-double-content{
+      display:flex;
+      .box-double-image{
+        height:320px;
+        width:320px;
+      }
+      .box-double-text{
+        padding:35px 80px;
+        background:#fff;
+        .author{
+          font-size:24px;
+          color:$text-color;
+          line-height: 34px;
+        }
+        h2{
+          color: $orange-color;
+          font-size:36px;
+          margin:5px 0px;
+        }
+        p{
+          margin:0;
+          font-size:24px;
+          color:$text-color;
+          line-height: 34px;
+        }
+      }
+      .box-double-button{
+        margin-right: -32px;
+        float:right;
+        text-decoration:none;
+        display:block;
+      }
+    }
+  }
 }
-.box-double{
-  width:50%;
-  .box-double-content{
-    display:flex;
-    .box-double-image{
-      height:320px;
-      width:320px;
+
+
+.box-single-container{
+  display:block;
+  margin: 50px 0;
+  .box-single{
+    width:1280px;
+    &.right{
+      margin-left:auto;
     }
-    .box-double-text{
-      padding:35px 80px;
-      background:#fff;
-      .author{
-        font-size:24px;
-        color:$text-color;
+    .box-single-content{
+      display:flex;
+      .box-single-image{
+        max-height:640px;
+        max-width:640px;
       }
-      h2{
-        color: $orange-color;
-        font-size:36px;
-        margin:0;
+      .box-single-text{
+        padding:162px 80px;
+        background:#fff;
+        max-height:640px;
+        width:480px;
+        .author{
+          font-size:24px;
+          color:$text-color;
+          line-height: 34px;
+        }
+        h2{
+          color: $orange-color;
+          font-size:36px;
+          margin:5px 0px;
+        }
+        p{
+          margin:0;
+          font-size:24px;
+          color:$text-color;
+          line-height: 34px;
+        }
       }
-      p{
-        margin:0;
-        font-size:24px;
-        color:$text-color;
+      .box-single-button{
+        margin-right: -32px;
+        float:right;
+        text-decoration:none;
+        display:block;
       }
-    }
-    .box-double-button{
-      // position: absolute;
-      margin-right: -32px;
-      float:right;
-      text-decoration:none;
-      display:block;
     }
   }
 }

@@ -383,40 +383,87 @@ main {
   font-size: 32px;
 }
 
-.box-double-content {
+.box-double-container {
   display: inline-flex;
   margin: 50px 0;
 }
-
-.box-double {
+.box-double-container .box-double {
   width: 50%;
 }
-.box-double .box-double-content {
+.box-double-container .box-double .box-double-content {
   display: flex;
 }
-.box-double .box-double-content .box-double-image {
+.box-double-container .box-double .box-double-content .box-double-image {
   height: 320px;
   width: 320px;
 }
-.box-double .box-double-content .box-double-text {
+.box-double-container .box-double .box-double-content .box-double-text {
   padding: 35px 80px;
   background: #fff;
 }
-.box-double .box-double-content .box-double-text .author {
+.box-double-container .box-double .box-double-content .box-double-text .author {
   font-size: 24px;
   color: #2D2D2D;
+  line-height: 34px;
 }
-.box-double .box-double-content .box-double-text h2 {
+.box-double-container .box-double .box-double-content .box-double-text h2 {
   color: #F1A10A;
   font-size: 36px;
-  margin: 0;
+  margin: 5px 0px;
 }
-.box-double .box-double-content .box-double-text p {
+.box-double-container .box-double .box-double-content .box-double-text p {
   margin: 0;
   font-size: 24px;
   color: #2D2D2D;
+  line-height: 34px;
 }
-.box-double .box-double-content .box-double-button {
+.box-double-container .box-double .box-double-content .box-double-button {
+  margin-right: -32px;
+  float: right;
+  text-decoration: none;
+  display: block;
+}
+
+.box-single-container {
+  display: block;
+  margin: 50px 0;
+}
+.box-single-container .box-single {
+  width: 1280px;
+}
+.box-single-container .box-single.right {
+  margin-left: auto;
+}
+.box-single-container .box-single .box-single-content {
+  display: flex;
+}
+.box-single-container .box-single .box-single-content .box-single-image {
+  max-height: 640px;
+  max-width: 640px;
+}
+.box-single-container .box-single .box-single-content .box-single-text {
+  padding: 162px 80px;
+  background: #fff;
+  max-height: 640px;
+  width: 480px;
+}
+.box-single-container .box-single .box-single-content .box-single-text .author {
+  font-size: 24px;
+  color: #2D2D2D;
+  line-height: 34px;
+}
+.box-single-container .box-single .box-single-content .box-single-text h2 {
+  color: #F1A10A;
+  font-size: 36px;
+  margin: 5px 0px;
+}
+.box-single-container .box-single .box-single-content .box-single-text p {
+  margin: 0;
+  font-size: 24px;
+  color: #2D2D2D;
+  line-height: 34px;
+}
+.box-single-container .box-single .box-single-content .box-single-button {
   margin-right: -32px;
   float: right;
   text-decoration: none;
