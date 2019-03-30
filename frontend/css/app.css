@@ -373,6 +373,7 @@ main {
   text-decoration: none;
   font-size: 32px;
   font-weight: bold;
+  cursor: pointer;
 }
 .navbar .navbar-links {
   display: flex;
@@ -388,32 +389,55 @@ main {
   text-decoration: none;
   font-size: 32px;
 }
+.navbar .navbar-button {
+  display: none;
+}
 
 @media screen and (max-width: 700px) {
   .navbar .navbar-content {
-    display: flex;
-    padding: 20px;
-    width: 1200px;
+    display: block;
     margin: 0 auto;
+    width: 100%;
+    padding: 0px;
   }
   .navbar .navbar-logo {
-    width: 50%;
+    width: 100%;
     align-self: center;
+    padding: 20px;
   }
   .navbar .navbar-logo a {
     text-decoration: none;
     font-size: 32px;
   }
   .navbar .navbar-links {
-    display: flex;
-    width: 50%;
+    display: none;
+    width: 100%;
     margin: 0px;
   }
   .navbar .navbar-links li {
-    margin: 0 60px;
+    margin: 0;
+    padding: 10px 20px;
+  }
+  .navbar .navbar-links li:hover {
+    background: #ddd;
+  }
+  .navbar .navbar-links li:hover a {
+    color: #000;
   }
   .navbar .navbar-links a {
     text-decoration: none;
+  }
+  .navbar .navbar-button {
+    display: block;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .navbar .navbar-button i {
+    font-size: 36px;
   }
 }
 .box-double-container {
@@ -510,7 +534,7 @@ main {
   }
   .box-double-container .box-double {
     width: 100%;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
   .box-double-container .box-double .box-double-content {
     display: block;
@@ -528,7 +552,11 @@ main {
 
   .box-single-container {
     display: block;
-    margin: 50px 0;
+    padding-bottom: 100px;
+    margin: 0px;
+  }
+  .box-single-container:last-child {
+    padding: 0px;
   }
   .box-single-container .box-single {
     width: 100%;
