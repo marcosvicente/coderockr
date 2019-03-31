@@ -1,3 +1,5 @@
+$orange-color: #F1A10A;
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -20,9 +22,15 @@ main{
     margin: 0 auto;
   }
 }
+h2{
+  color: $orange-color;
+  font-size:36px;
+  margin:5px 0px;
+
+}
 
 @media screen and (min-width: 700px) and (max-width: 1280px){
- .main-box{
+  .main-box{
     padding: 0px;
     .main-box-content{
       width:100%;

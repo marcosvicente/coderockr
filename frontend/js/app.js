@@ -8,4 +8,12 @@ function menuMobile() {
     menu[0].style.display = "block";
   }
 }
+function modal(){
+  var menu =  document.getElementsByClassName("modal");
+  menu[0].style.display = "block";
+}
+function modalClose(){
+  var menu =  document.getElementsByClassName("modal");
+  menu[0].style.display = "none";
 
+}

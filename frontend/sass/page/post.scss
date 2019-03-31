@@ -58,49 +58,17 @@ $text-color: #2D2D2D;
 }
 }
 @media screen and (max-width: 700px){
-.post{
-  .post-header{
-    display:block;
-    .post-image{
-      width: 100%;
-      height: auto;
-      img{
+  .post{
+    .post-header{
+      display:block;
+      .post-image{
         width: 100%;
-      }
-    }
-    .post-info{
-      .date{
-        display:block;
-        font-size: 18px;
-        color:$text-color;
-        margin-bottom: 44px;
-      }
-      .author{
-        display:block;
-        font-size:24px;
-        color:$text-color;
-        margin-bottom: 61px;
-      }
-      h1{
-        color:$orange-color;
-        font-size: 36px; 
+        height: auto;
+        img{
+          width: 100%;
+        }
       }
     }
   }
-  .post-text{
-    margin: 20px;
-    position:relative;
-    display:inline-block;
-    p{
-      margin:60px 0px;
-      font-size:24px;
-      color:$text-color;
-      line-height: 34px;
-    }
-  }
-}
-
-
-
 }
 

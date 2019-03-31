@@ -363,6 +363,12 @@ main {
   margin: 0 auto;
 }
 
+h2 {
+  color: #F1A10A;
+  font-size: 36px;
+  margin: 5px 0px;
+}
+
 @media screen and (min-width: 700px) and (max-width: 1280px) {
   .main-box {
     padding: 0px;
@@ -661,6 +667,77 @@ main {
     margin-top: -4px;
   }
 }
+.modal {
+  position: fixed;
+  display: none;
+  top: 10%;
+  right: 0;
+  left: 0;
+  background: #fff;
+  width: 810px;
+  margin: auto;
+  max-height: 70%;
+  will-change: top, opacity;
+  overflow-y: scroll;
+}
+.modal .modal-content {
+  padding: 100px 120px;
+  display: block;
+}
+.modal .modal-close {
+  position: absolute;
+  cursor: pointer;
+  right: 50px;
+  top: 50px;
+}
+.modal .modal-close i {
+  font-size: 50px;
+}
+.modal h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .modal {
+    width: 100%;
+  }
+}
+.input-field {
+  display: block;
+  margin: 50px 0px;
+}
+.input-field label {
+  color: #000;
+  font-size: 24px;
+  line-height: 34px;
+  display: block;
+  margin-bottom: 4px;
+}
+.input-field input,
+.input-field textarea {
+  border: 1px solid #2D2D2D;
+  border-radius: 4px;
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+}
+.input-field textarea {
+  height: 200px;
+}
+
+button {
+  background: #2D2D2D;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  max-width: 230px;
+  width: 100%;
+  height: 60px;
+}
+
 .post .post-header {
   display: flex;
 }
@@ -722,33 +799,6 @@ main {
   }
   .post .post-header .post-image img {
     width: 100%;
-  }
-  .post .post-header .post-info .date {
-    display: block;
-    font-size: 18px;
-    color: #2D2D2D;
-    margin-bottom: 44px;
-  }
-  .post .post-header .post-info .author {
-    display: block;
-    font-size: 24px;
-    color: #2D2D2D;
-    margin-bottom: 61px;
-  }
-  .post .post-header .post-info h1 {
-    color: #F1A10A;
-    font-size: 36px;
-  }
-  .post .post-text {
-    margin: 20px;
-    position: relative;
-    display: inline-block;
-  }
-  .post .post-text p {
-    margin: 60px 0px;
-    font-size: 24px;
-    color: #2D2D2D;
-    line-height: 34px;
   }
 }
 
