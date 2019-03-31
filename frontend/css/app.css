@@ -363,6 +363,14 @@ main {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+  .main-box {
+    padding: 0px;
+  }
+  .main-box .main-box-content {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 700px) {
   .main-box {
     padding: 0px;
@@ -378,7 +386,8 @@ main {
 .navbar .navbar-content {
   display: flex;
   padding: 20px;
-  width: 1200px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 .navbar .navbar-logo {
@@ -410,6 +419,17 @@ main {
   display: none;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+  .navbar .navbar-content {
+    width: 100%;
+  }
+  .navbar .navbar-logo {
+    width: 40%;
+  }
+  .navbar .navbar-links {
+    width: 40%;
+  }
+}
 @media screen and (max-width: 700px) {
   .navbar .navbar-content {
     display: block;
@@ -544,6 +564,52 @@ main {
   display: block;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+  .box-double-container {
+    margin: 0;
+  }
+  .box-double-container .box-double .box-double-content {
+    display: block;
+  }
+  .box-double-container .box-double .box-double-content .box-double-image {
+    height: auto;
+    width: 100%;
+  }
+  .box-double-container .box-double .box-double-content .box-double-image img {
+    width: 100%;
+  }
+  .box-double-container .box-double .box-double-content .box-double-text {
+    margin-top: -4px;
+    height: 650px;
+  }
+
+  .box-single-container {
+    display: block;
+    margin: 0px;
+  }
+  .box-single-container:last-child {
+    padding: 0px;
+  }
+  .box-single-container .box-single {
+    width: 100%;
+  }
+  .box-single-container .box-single .box-single-content {
+    display: block;
+  }
+  .box-single-container .box-single .box-single-content .box-single-image {
+    height: auto;
+    width: 100%;
+    max-width: inherit;
+    max-height: inherit;
+  }
+  .box-single-container .box-single .box-single-content .box-single-image img {
+    width: 100%;
+  }
+  .box-single-container .box-single .box-single-content .box-single-text {
+    width: auto;
+    margin-top: -4px;
+  }
+}
 @media screen and (max-width: 700px) {
   .box-double-container {
     display: block;
@@ -633,6 +699,19 @@ main {
   line-height: 34px;
 }
 
+@media screen and (min-width: 700px) and (max-width: 1280px) {
+  .post .post-header .post-image {
+    width: 100%;
+    height: auto;
+  }
+  .post .post-header .post-image img {
+    width: 100%;
+  }
+  .post .post-header .post-info {
+    padding: 150px 120px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 700px) {
   .post .post-header {
     display: block;

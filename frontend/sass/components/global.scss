@@ -20,6 +20,15 @@ main{
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 700px) and (max-width: 1280px){
+ .main-box{
+    padding: 0px;
+    .main-box-content{
+      width:100%;
+    }
+  }
+}
 @media screen and (max-width: 700px){
   .main-box{
     padding: 0px;
