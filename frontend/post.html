@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rockr Blog</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <div class="navbar-logo">
+          <a href="index.html">Rockr Blog</a>
+        </div>
+        <ul class="navbar-links">
+          <li><a href="post.html">Posts</a></li>
+          <li><a href="#" onclick="modal()">Contact</a></li>
+        </ul>
+        <span class="navbar-button" id="menu-mobile" onclick="menuMobile()">
+          <i class="material-icons">dehaze</i>
+        </span>
+      </div>
+    </nav>
+    <!-- end Menu -->
+    <main class="main-box">
+      <div class="main-box-content">
+        <div class="post">
+          <div class="post-header">
+            <div class="post-image">
+              <img src="img/box-3.jpg" alt="">
+            </div>
+            <div class="post-info">
+              <span class="date">Jan 6, 2018</span>
+              <span class="author">Kelsi Monahan</span>
+              <h1>Qui occaecati vero et quibusdam non </h1>
+            </div>
+          </div>
+          <div class="post-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eleifend ligula in nulla vulputate pharetra. Proin condimentum, libero quis feugiat pharetra, ante arcu faucibus felis, vel elementum magna felis in libero. Aliquam id ultricies purus. Etiam at ullamcorper enim. Cras vel elit ac lorem condimentum dignissim. Ut rhoncus neque finibus erat congue, id tempus lacus hendrerit. Curabitur non faucibus diam. Sed id ante id dolor euismod varius eu vel velit.</p>
+            <p>Maecenas id ligula quis enim blandit gravida a et lorem. Vivamus eu turpis eu leo malesuada dictum non ac tortor. Pellentesque volutpat mollis leo tincidunt sollicitudin. Suspendisse porta imperdiet sapien nec euismod. Quisque ac dictum sem. Cras in porttitor lacus, vitae convallis elit. Maecenas in fermentum erat, a rutrum nulla.</p>
+            <p>Mauris quis dolor sit amet metus mollis tempor eu quis turpis. Vestibulum vel eleifend magna, eget tempor nulla. Donec bibendum mauris aliquam elit vulputate, id vestibulum lorem sodales. Nullam eget erat mauris. Etiam sit amet sollicitudin magna. Ut tortor nisi, mollis viverra tempus consequat, interdum non mi. Quisque bibendum, lacus sit amet rhoncus malesuada.</p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- modal -->
+    <div class="modal">
+      <div class="modal-close" onclick="modalClose()">
+        <i class="material-icons">close</i>
+      </div>
+      <div class="modal-content">
+        <h2>Contact</h2>
+        <form action="" method="post">
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Fill your full name">
+          </div>
+
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Fill your email">
+          </div>
+
+          <div class="input-field">
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" id="phone" placeholder="Fill your phone">
+          </div>
+
+          <div class="input-field">
+            <label for="post">Post</label>
+            <textarea name="post" id="post" placeholder="Hello..."></textarea>
+          </div>
+          <button type="submit">Submit</button>
+
+        </form>
+      </div>
+    </div>
+    <!-- end modal -->
+    <script charset="utf-8" src="js/app.js"></script>
+  </body>
+</html>
